@@ -1,0 +1,208 @@
+.contact-section{
+    width: 100%;
+    background-color: black;
+}
+
+.contact-section .contact-container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding:  40px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-section .contact-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.contact-section .contact-container .heading span{
+    font-weight: 700;
+    font-size: 35px;
+    color: #E3B857;
+}
+
+.contact-section .contact-container .contact-form-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-section .contact-container .contact-form-row .img{
+    width: 48%;
+    height: 366px;
+}
+
+.contact-section .contact-container .contact-form-row .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-section .contact-container .contact-form-row form{
+
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-section .contact-container .contact-form-row form .form-heading{
+    width: 100%;
+    text-align: center;
+}
+
+.contact-section .contact-container .contact-form-row form .form-heading span{
+    color: #E3B857;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.contact-section .contact-container .contact-form-row form .same-field{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.contact-section .contact-container .contact-form-row form .same-field label{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+}
+
+.contact-section .contact-container .contact-form-row form .same-field input{
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    padding-left: 5px;
+}
+
+.contact-section .contact-container .contact-form-row form .same-field textarea{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.contact-section .contact-container .contact-form-row form button{
+font-weight: 400;
+color: white;
+background-color: #E3B857;
+border: none;
+padding: 8px 25px;
+cursor: pointer;
+font-size: 20px;
+border-radius: 3px;
+}
+
+.contact-section .contact-container .adress-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-section .contact-container .adress-row .same-col{
+    width: 31%;
+    display: flex;
+    /* align-items: center; */
+    gap: 12px;
+}
+
+.contact-section .contact-container .adress-row .same-col i{
+    color: #E3B857;
+    font-size: 46px;
+}
+
+.contact-section .contact-container .adress-row .same-col .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.contact-section .contact-container .adress-row .same-col .detail h3{
+    color: #E3B857;
+}
+
+.contact-section .contact-container .adress-row .same-col .detail a{
+    color: white;
+}
+
+.contact-section .contact-container .adress-row .same-col .detail p{
+    color: white;
+}
+    
+.contact-section .location-parent{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+    
+.contact-section .location-parent iframe{
+    width: 100%;
+    height: 100%;
+}
+    
+.contact-section .location-parent .location-shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.23);
+
+    transition: all 0.3s linear;
+}
+    
+.contact-section .location-parent .location-shadow:hover{
+    background-color: rgba(0, 0, 0, 0.099);
+}
+
+@media (max-width:900px) {
+
+    .contact-section .contact-container .contact-form-row{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contact-section .contact-container .contact-form-row .img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-section .contact-container .contact-form-row form{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-section .contact-container .adress-row{
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .contact-section .contact-container .adress-row .same-col{
+        width: 47%;
+    }
+    
+}
+
+@media (max-width:700px) {
+    
+    .contact-section .contact-container{
+        padding: 40px 20px;
+    }
+
+    .contact-section .contact-container .adress-row .same-col{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,92 @@
+.abouthome-section{
+    width: 100%;
+    background-color: black;
+}
+
+.abouthome-section .abouthome-container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.abouthome-section .abouthome-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.abouthome-section .abouthome-container .heading span{
+    font-size: 35px;
+    font-weight: 700;
+    color: #E3B857;
+}
+
+.abouthome-section .abouthome-container .main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.abouthome-section .abouthome-container .main-container .left{
+    width: 48%;
+    height: 500px;
+}
+
+.abouthome-section .abouthome-container .main-container .left img{
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+.abouthome-section .abouthome-container .main-container .right{
+    width: 48%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.abouthome-section .abouthome-container .main-container .right span{
+    color: #E3B857;
+    font-weight: 700;
+}
+
+.abouthome-section .abouthome-container .main-container .right h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.abouthome-section .abouthome-container .main-container .right h2 span{
+    font-weight: 900;
+}
+
+.abouthome-section .abouthome-container .main-container .right p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media (max-width:700px) {
+
+    .abouthome-section .abouthome-container{
+        padding: 40px 20px;
+    }
+
+    .abouthome-section .abouthome-container .main-container{
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .abouthome-section .abouthome-container .main-container .left{
+        width: 100%;
+        height: 500px;
+    }
+    
+    .abouthome-section .abouthome-container .main-container .right{
+        width: 100%;
+    }
+    
+}

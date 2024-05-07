@@ -1,0 +1,71 @@
+.welcomepage-section{
+    width: 100%;
+    background-color: black;
+}
+
+.welcomepage-section .welcome-container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcomepage-section .welcome-container .left{
+    width: 48%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: white;
+}
+
+.welcomepage-section .welcome-container .left h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: #E3B857;
+}
+
+.welcomepage-section .welcome-container .left a{
+    padding: 10px 15px;
+    background-color: #E3B857;
+    color: white;
+}
+
+.welcomepage-section .welcome-container .right{
+    width: 48%;
+    height: 400px;
+}
+
+.welcomepage-section .welcome-container .right img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+@media (max-width:800px) {
+
+    .welcomepage-section .welcome-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .welcomepage-section .welcome-container .left{
+        width: 100%;
+    }
+    
+    .welcomepage-section .welcome-container .right{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media (max-width:700px) {
+    .welcomepage-section .welcome-container{
+        padding: 40px 20px;
+    }
+}
